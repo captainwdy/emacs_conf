@@ -1,0 +1,161 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Oct  8 14:54:38 2015
+;; Desktop file format version 206
+;; Emacs version 24.3.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("R" "_"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs" "~/test/inf/bec/bccs/csmonitor/src/monitor_conf.h" "~/test/inf/bec/bccs/csmonitor/src/main.cc" "~/test/inf/bec/bccs/csmonitor/src/monitor_service_impl.h" "~/test/inf/bec/bccs/csmonitor/src/monitor_service_impl.cc" "~/test/inf/bec/bccs/csmonitor/src/main.cc" "~/test/inf/bec/bccs/csmonitor/src/csmonitor_log.h" "~/test/inf/bec/bccs/csmonitor/src/monitor_errno.cc" "~/test/inf/bec/bccs/csmonitor/src/monitor_log.h" "~/test/inf/bec/bccs/csmonitor/src/monitor_conf.cc" "~/test/inf/bec/bccs/csmaster/src/bccs/csmaster/main.cc" "~/test/inf/bec/bccs/csmaster/src/bccs/csmaster/util/csmaster_log.h" "~/test/inf/bec/bccs/csmonitor/src/csmonitor_log.h" "~/test/inf/bec/bccs/csmaster/src/bccs/csmaster/util/error_no.h" "~/test/inf/bec/bccs/csmaster/src/bccs/csmaster/util/error_no.cc"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/wangdayao/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  nil
+  1952
+  '(1525 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/wangdayao/test/inf/bec/bccs/csmonitor/src/monitor_conf.cc"
+  "monitor_conf.cc"
+  'c++-mode
+  '(abbrev-mode ggtags-mode gtags-mode)
+  1076
+  '(3832 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/wangdayao/test/inf/bec/bccs/csmonitor/src/monitor_conf.h"
+  "monitor_conf.h"
+  'c-mode
+  '(abbrev-mode ggtags-mode gtags-mode)
+  543
+  '(1018 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/wangdayao/test/inf/bec/bccs/csmonitor/src/main.cc"
+  "main.cc<2>"
+  'c++-mode
+  '(abbrev-mode ggtags-mode gtags-mode)
+  3290
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/wangdayao/test/inf/bec/bccs/csmonitor/src/monitor_log.h"
+  "monitor_log.h"
+  'c-mode
+  '(abbrev-mode ggtags-mode gtags-mode)
+  1279
+  '(1278 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode . t) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/wangdayao/test/inf/bec/bccs/csmonitor/src/monitor_service_impl.h"
+  "monitor_service_impl.h"
+  'c-mode
+  '(abbrev-mode ggtags-mode gtags-mode)
+  876
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/wangdayao/test/inf/bec/bccs/csmonitor/src/monitor_service_impl.cc"
+  "monitor_service_impl.cc"
+  'c++-mode
+  '(abbrev-mode ggtags-mode gtags-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/wangdayao/test/inf/bec/bccs/csmonitor/src/monitor_errno.cc"
+  "monitor_errno.cc"
+  'c++-mode
+  '(abbrev-mode ggtags-mode gtags-mode)
+  679
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/wangdayao/test/inf/bec/bccs/csmaster/src/bccs/csmaster/main.cc"
+  "main.cc"
+  'c++-mode
+  '(abbrev-mode ggtags-mode gtags-mode)
+  16494
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/wangdayao/test/inf/bec/bccs/csmaster/src/bccs/csmaster/util/csmaster_log.h"
+  "csmaster_log.h"
+  'c-mode
+  '(abbrev-mode ggtags-mode gtags-mode)
+  2567
+  '(2160 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/wangdayao/test/inf/bec/bccs/csmonitor/src/monitor_errno.h"
+  "monitor_errno.h"
+  'c-mode
+  '(abbrev-mode ggtags-mode gtags-mode)
+  609
+  '(611 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/wangdayao/test/inf/bec/bccs/csmaster/src/bccs/csmaster/util/error_no.h"
+  "error_no.h"
+  'c-mode
+  '(abbrev-mode ggtags-mode gtags-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/wangdayao/test/inf/bec/bccs/csmaster/src/bccs/csmaster/util/error_no.cc"
+  "error_no.cc"
+  'c++-mode
+  '(abbrev-mode ggtags-mode gtags-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
