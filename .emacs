@@ -14,7 +14,7 @@
 (setq-default pathname-coding-system 'utf-8)
 
 ;;中文识别的插件
-;;(require 'unicad)
+(require 'unicad)
 
 ;;启用时间显示设置
 (display-time-mode 1)
@@ -41,11 +41,6 @@
 ;;      (add-to-list 'alist (get-tuple-from-plist the-plist))
 ;;      (setq the-plist (cddr the-plist)))
 ;;  alist))
-
-(add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-lisp/solarized")
-(load-theme 'solarized t)
-(set-frame-parameter nil 'background-mode 'light)    ;;选择solarized dark,light
-(enable-theme 'solarized)
 
 ;;(require 'color-theme) 
 ;;(color-theme-fischmeister)
@@ -112,25 +107,17 @@
 (window-numbering-mode 1)
 ;;键绑定
 (global-set-key [f5] 'compile)
-;;gtags
-(autoload 'gtags-mode "gtags" "" t)
-(add-hook 'c-mode-common-hook
-          '(lambda()
-             (when (derived-mode-p 'c-mode 'c++-mode)
-	       (gtags-mode 1)
-	       (gtags-make-complete-list)
-             )))
-(require 'ggtags)
-(add-hook 'c-mode-common-hook
-          (lambda ()
-            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
-              (ggtags-mode 1))))
 
-;;auto complete
-(add-to-list 'load-path "/home/wangdayao/.emacs.d/emacs-lisp")
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "/home/wangdayao/.emacs.d/emacs-lisp/ac-dict")
-(ac-config-default)
+(defun now()
+(interactive)
+(insert(format-time-string "%Y/%m/%d %H:%M:%S")))
 
-(setq ac-auto-start nil)
-(ac-set-trigger-key "TAB")
+(defun comment()
+(interactive)
+(insert "#!/usr/bin/env python \n# -*- coding: utf-8 -*-\n")
+(insert "File:")
+(insert(buffer-name))
+(insert "Author: wangdayao(captainwdy@163.com\n")
+(insert "Date: ")
+(insert(format-time-string "%Y/%m/%d %H:%M:%S")))
+
