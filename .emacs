@@ -134,3 +134,17 @@
 
 (setq ac-auto-start nil)
 (ac-set-trigger-key "TAB")
+
+(defun now()
+(interactive)
+(insert(format-time-string "%Y/%m/%d %H:%M:%S")))
+
+(defun comment()
+(interactive)
+(insert "#!/usr/bin/env python \n# -*- coding: utf-8 -*-\n")
+(insert "File:")
+(insert(buffer-name))
+(insert "Author: wangdayao(captainwdy@163.com\n")
+(insert "Date: ")
+(insert(format-time-string "%Y/%m/%d %H:%M:%S")))
+
