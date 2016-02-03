@@ -103,8 +103,11 @@
 (global-font-lock-mode t)
 ;;设置行号
 (require 'wb-line-number)
-(wb-line-number-enable)
-(setq column-number-mode t)
+;;(add-hook 'after-init-hook 'wb-line-number-enable)
+(wb-line-number-toggle)
+(global-set-key (kbd "C-x l") 'wb-line-number-toggle)
+;;(wb-line-number-enable)
+;;(setq column-number-mode t)
 ;; 默认显示 80列就换行  
 (setq default-fill-column 100)  
 ;;设置windows number
@@ -148,3 +151,29 @@
 (insert "#Date: ")
 (insert(format-time-string "%Y/%m/%d %H:%M:%S"))
 (insert "\n#Descrip:"))
+
+;;ecb 设置
+(add-to-list 'load-path "~/.emacs.d/emacs-lisp/ecb")
+(require 'ecb)
+(defun ecb-active-or-deactive ()  
+  (interactive)  
+  (if ecb-minor-mode  
+      (ecb-deactivate)  
+    (ecb-activate)))  
+
+(global-set-key (kbd "C-x ;") 'ecb-active-or-deactive)
+;;(require 'ecb-autoloads)
+;;(require 'edit-window)
+(setq ecb-layout-name "right1")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-options-version "2.40"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
